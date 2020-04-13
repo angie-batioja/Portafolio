@@ -1,0 +1,99 @@
+body {
+  background: #000;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+}
+
+.circular-progress {
+  position: relative;
+  margin: 20px;
+}
+.circular-progress, .circular-progress:before, .circular-progress:after {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+}
+.circular-progress:before, .circular-progress:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+.circular-progress:before {
+  line-height: 8rem;
+  padding: .5em;
+  box-sizing: border-box;
+  font-size: 1.8rem;
+}
+.circular-progress:after {
+  line-height: 13rem;
+}
+
+.html5 {
+  background: linear-gradient(0deg, #062124 50%, rgba(255, 99, 71, 0.2) 50%);
+  transform: rotate(126deg);
+}
+.html5:before, .html5:after {
+  color: #062124;
+}
+.html5:before {
+  content: "DISEÑO-EDICION";
+  font-size: 15px;
+  background: white content-box;
+  transform: rotate(-126deg);
+  text-transform: uppercase;
+}
+.html5:after {
+  content: "70%";
+  background: linear-gradient(transparent 50%, white 50%);
+  transform: scale(1.1) rotate(-126deg);
+}
+
+.css3 {
+  background: linear-gradient(0deg, #062124 50%, rgba(70, 130, 180, 0.2) 50%);
+  transform: rotate(153deg);
+}
+.css3:before, .css3:after {
+  color:#062124;
+}
+.css3:before {
+  content: "HTML ";
+  font-size: 15px;
+  background: white content-box;
+  transform: rotate(-153deg);
+  text-transform: uppercase;
+}
+.css3:after {
+  content: "85%";
+  background: linear-gradient(transparent 50%, white 50%);
+  transform: scale(1.1) rotate(-153deg);
+}
+
+.jscript {
+  background: linear-gradient(0deg, #062124 65%, rgba(255, 165, 0, 0.2) 65%);
+  transform: rotate(102.6deg);
+}
+.jscript:before, .jscript:after {
+  color: #062124;
+}
+.jscript:before {
+  content: "HTML (FRONT END)";
+  font-size: 15px;
+  background: white content-box;
+  transform: rotate(-102.6deg);
+  text-transform: uppercase;
+}
+.jscript:after {
+  content: "57%";
+  background: linear-gradient(transparent 50%, white 50%);
+  transform: scale(1.1) rotate(-102.6deg);
+}
+
+.skills {
+  display: flex;
+  margin-top: 4em;
+  flex-wrap: wrap;
+}
